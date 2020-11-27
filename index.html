@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,600&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src='./app.js'></script>
 </head>
 
 <body>
@@ -169,20 +172,20 @@
             <a href=""></a>
             <h3 style="text-align: center;">Hit Me Up! 📬</h3>
 
-            <form id="contact-form" action="" method="POST">
+            <form id="contact-form" action="" method="">
                 <a name="contact"></a>
 
                 <label>Name</label>
-                <input class="input-field" type="text" name="name">
+                <input class="input-field" type="text" name="user_name" id='name'>
 
                 <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
+                <input class="input-field" type="text" name="subject" id='subject'>
 
                 <label>Email</label>
-                <input class="input-field" type="text" name="email">
+                <input class="input-field" type="text" name="user_email" id='email'>
 
                 <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
+                <textarea class="input-field" name="message" id='message'></textarea>
 
                 <input id="submit-btn" type="submit" value="Send">
             </form>
