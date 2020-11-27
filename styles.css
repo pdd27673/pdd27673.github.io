@@ -409,3 +409,17 @@ h6 {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 400px) {
+    #preview-shadow {
+        max-width: 280px;
+        height: 180px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    #preview {
+        width: 280px;
+    }
+
+}
