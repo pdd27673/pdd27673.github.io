@@ -302,7 +302,6 @@ h6 {
 .work-experience {
     display: grid;
     align-content: center;
-    text-align: center;
 }
 
 .project-wrapper {

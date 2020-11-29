@@ -11,7 +11,6 @@ window.onload = function () {
 			var email = document.getElementById('email');
 			var subject = document.getElementById('subject');
 
-			console.log(fromName);
 			event.preventDefault();
 
 			emailjs
@@ -24,6 +23,10 @@ window.onload = function () {
 				.then(
 					function () {
 						alert('Success');
+						fromName.value = ' ';
+						message.value = ' ';
+						email.value = ' ';
+						subject.value = ' ';
 					},
 					function (error) {
 						alert('error...');
