@@ -30,6 +30,7 @@ window.onload = function () {
 					},
 					function (error) {
 						alert('error...');
+                        console.log(error);
 					}
 				);
 		});
